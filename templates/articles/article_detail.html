@@ -1,0 +1,15 @@
+{% extends "baase.html" %}
+
+
+{% block content %}
+
+  <h1>Article Details</h1>
+
+  <h3>In App template {{ object.title }}</h3>
+    {{ object.body }}
+
+  <p> {% if body != None object.body != " %"}{{ object.body }}{% else %}Articles will be posted soon{ % endif %}</p>
+
+
+
+{% endblock %}

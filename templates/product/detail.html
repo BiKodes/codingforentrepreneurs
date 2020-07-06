@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h1>Item details description</h1>
+
+{{ object.title }}
+{{ object.description }}
+<p>{% if price != None and object.price != "" %}{{ object.price }}{% else %}Price Coming Soon{% endif %}</p>
+
+
+{% endblock %}
